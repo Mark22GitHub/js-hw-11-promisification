@@ -55,20 +55,3 @@ makeTransaction({ id: 72, amount: 75 })
 makeTransaction({ id: 73, amount: 100 })
   .then(logSuccess)
   .catch(logError);
-
-
-
-
-
-// ===========
-//   const promise = new Promise((resolve, reject) => {
-//   setTimeout(() => {
-//     const canProcess = Math.random() > 0.3;
-
-//     if (canProcess) {
-//       resolve(transaction.id, delay);
-//     } else {
-//       reject(transaction.id);
-//     }
-//   }, delay);
-// });
